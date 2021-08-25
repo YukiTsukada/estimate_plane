@@ -21,9 +21,9 @@ XYZ = [xyz.Var1(:), xyz.Var2(:), xyz.Var3(:)];
 PCA_XYZ = pca(XYZ);
 
 %% select the third PCA verctor as normal vector
-PCA_3X = PCA_XYZ(1,3);
-PCA_3Y = PCA_XYZ(2,3);
-PCA_3Z = PCA_XYZ(3,3);
+PCA_3X = PCA_XYZ(1,3)
+PCA_3Y = PCA_XYZ(2,3)
+PCA_3Z = PCA_XYZ(3,3)
 
 %%  derive the plane
 for simX = 1:sizeP_X
@@ -37,4 +37,3 @@ figure;surf(simZ);hold on;
 plot3(xyz.Var1(:),xyz.Var2(:),xyz.Var3(:),'o');
 %plot3(XYZ(:,1),XYZ(:,2),XYZ(:,3),'o');
 %plot3(Xmass,Ymass,Zmass,'ro');
-
